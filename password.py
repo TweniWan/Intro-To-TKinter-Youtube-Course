@@ -1,8 +1,9 @@
 from tkinter import *
 from random import randint
+import pyperclip 
 
 root = Tk()
-root.title('Codemy.com - Strong Password Generator')
+root.title('twenicodemy.com - Intelligent Password Generator')
 root.iconbitmap('c:/gui/codemy.ico')
 root.geometry("500x300")
 
@@ -26,8 +27,7 @@ def new_rand():
 	pw_entry.insert(0, my_password)
 
 
-# Copy to clipboard
-def clipper():
+# Copy to clipboarddef clipper():
 	# Clear the clipboard
 	root.clipboard_clear()
 	# Copy to clipboard
